@@ -1,7 +1,7 @@
 import React from 'react';
 
-export function HelperText(props){
-	return(<p>props.text</p>)
+export default function HelperText(props){
+	return(<p>{props.text}</p>)
 }
 
 HelperText.defaultProps = {

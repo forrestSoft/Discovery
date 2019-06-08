@@ -1,13 +1,8 @@
 import React from 'react';
 
-import {Button} from './components/atoms/button'
-import {CheckBox} from './components/atoms/checkbox'
-import {Header} from './components/atoms/header'
-import {HelperText} from './components/atoms/helpertext'
-import {Link} from './components/atoms/link'
-import {Subheader} from './components/atoms/subheader'
-import {TextInput} from './components/atoms/textinput'
-
+import Step1 from 'molecules/step1'
+import Step2 from 'molecules/step2'
+import Step3 from 'molecules/step3'
 
 
 import './App.scss';
@@ -15,15 +10,11 @@ import './App.scss';
 function App() {
   return (
     <div className="App">
-      <Button />
-      <CheckBox />
-      <Header />
-      <HelperText />
-      <Link />
-      <Subheader/>
-      <TextInput />
+      <Step1 />
+      <Step2 />
+      <Step3 />
     </div>
-  );
+  )
 }
 
 export default App;

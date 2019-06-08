@@ -1,10 +1,10 @@
 import React from 'react';
 
-export function Link(props){
+export default function Link(props){
 	let {url, text} = props
 	
 	return(
-		<a href={url}>text</a>
+		<a href={url}>{text}</a>
 	)
 }
 
