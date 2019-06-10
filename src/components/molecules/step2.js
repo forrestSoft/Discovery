@@ -4,13 +4,24 @@ import Text from 'atoms/text'
 import TextInput from 'atoms/textinput'
 import Button from 'atoms/button'
 
-function Step2(){
+function Step2(props){
 	return(
 		<React.Fragment>
-			<Text text="Almost Done! Please Enter Your First and Last Name." />
-			<TextInput placeholder="First Name" />
+			<Text 
+				type="h2" 
+				text="Almost Done! Please Enter Your First and Last Name."
+			/>
+			<TextInput 
+				placeholder="First Name" 
+				onChange={props.handleChange}
+				value={props.data.firstName}
+			/>
 			<TextInput placeholder="Last Name" />
-			<Button text="Sign up" />
+			<Button 
+				handleClick={props.handleClick}
+				text="Sign up" 
+				value={props.data.lastName}
+			/>
 		</React.Fragment>
 	)
 }

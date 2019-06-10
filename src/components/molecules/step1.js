@@ -6,22 +6,34 @@ import Button from 'atoms/button'
 import Checkbox from 'atoms/checkbox'
 import Link from 'atoms/link'
 
+import './step1.scss'
 
-function Step1(){
+function Step1(props){
 	return(
 		<React.Fragment>
-			<Text text="Sign up for the TLC newsletter" />
-			<TextInput placeholder="email address" />
-			<Button text="Next" />
-			<Checkbox />
 			<Text 
-				text="I agree to receive information from Discovery Communications in accordance with the following"
-				Type="p"
+				type="h2"
+				text="Sign up for the TLC newsletter"
 			/>
-			<Link text="Privacy Policy" url="asdf" />
+			<div class="inputWrapper">
+				<TextInput placeholder="email address" 
+					onChange={props.handleChange('email')}
+					value={props.data.email}
+				/>
+				<Button text="Next" 
+					handleClick = {props.handleClick}
+				/>
+			</div>
+
+			<div className="helperTextWrapper">
+				<Checkbox />
+				<Text type="span" >
+					I agree to receive information from Discovery Communications in accordance with the following
+					<Link text="Privacy Policy" url="asdf" />
+				</Text>
+			</div>
 		</React.Fragment>
 	)
 }
 
 export default Step1;
- 

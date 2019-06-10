@@ -1,0 +1,39 @@
+@import 'remcalc.scss';
+
+.inputWrapper{
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+}
+
+input[type="text"]{
+	font-family: AzoSans-Regular;
+	font-size: rem-calc(24);
+	line-height: rem-calc(32);
+	height: rem-calc(45);
+	color: rgba(255,255,255,.4);
+	text-align: left;
+	background: rgba(255, 255, 255, .2);
+	border-radius: 5px;
+	border: 0;
+	margin: 0;
+	padding: rem-calc(7) rem-calc(25) rem-calc(6) rem-calc(25);
+}
+
+input[type="checkbox"]{
+	vertical-align: top;
+	margin-right: rem-calc(9);
+}
+
+button{
+	font-family: AzoSans-Bold;
+	font-size: rem-calc(20);
+	text-align: center;
+	line-height: rem-calc(24);
+	color: #FFFFFF;
+	background: #ED1F34;
+	padding:rem-calc(15) rem-calc(45);
+	border-radius: 5px;
+	border: 0;
+	margin-left: rem-calc(20);
+}

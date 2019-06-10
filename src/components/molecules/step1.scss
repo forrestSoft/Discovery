@@ -1,0 +1,5 @@
+@import 'components/remcalc.scss';
+
+input[type='text']{
+	width: rem-calc(480);
+}

@@ -1,11 +1,14 @@
 import React from 'react';
 
 export default function Text(props){
-	let { text, Type } = props
-	return(<Type>{text}</Type>)
+	let { text, Type, type } = props
+	if(type && !!Type){
+		Type = type
+	}
+
+	return(<Type>{text || props.children}</Type>)
 }
 
 Text.defaultProps = {
-  text: 'I am Text',
-  Type: 'H1'
+  Type: 'h1'
 };

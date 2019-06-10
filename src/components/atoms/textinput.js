@@ -9,6 +9,7 @@ export default function TextInput(props){
 			type="text"
 			placeholder={placeholder}
 			value={value}
+			onChange={props.onChange || null}
 		/>
 	)
 }
