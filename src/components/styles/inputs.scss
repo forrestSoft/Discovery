@@ -10,50 +10,63 @@
 
 	@include sm{
 		flex-direction: column;
+
 		padding: 0 rem-calc(20);
-		flex-wrap: wrap-reverse;
 	}
 }
 
 input[type="text"]{
 	box-sizing: border-box;
+
+	padding: rem-calc(8) rem-calc(25) rem-calc(5) rem-calc(25);
+	border: 0;
+	border-radius: 5px;
+	margin: 0;
+
+	background: rgba(255, 255, 255, .2);
 	font-family: AzoSans-Regular;
+	color: rgba(255,255,255,.4);
 	font-size: rem-calc(24);
 	line-height: rem-calc(32);
-	height: rem-calc(45);
-	color: rgba(255,255,255,.4);
 	text-align: left;
-	background: rgba(255, 255, 255, .2);
-	border-radius: 5px;
-	border: 0;
-	margin: 0;
-	padding: rem-calc(7) rem-calc(25) rem-calc(6) rem-calc(25);
 
+	// the second input field needs left margin
 	& ~ input{
 		margin-left: rem-calc(10);
+	}
+
+	@include sm{
+		font-size: rem-calc(14);
+		padding-top: rem-calc(6);
+		padding-bottom: rem-calc(2);
 	}
 }
 
 input[type="checkbox"]{
-	vertical-align: top;
 	margin-right: rem-calc(9);
+	
+	vertical-align: top;
 }
 
 button{
 	box-sizing: border-box;
+	border-radius: 5px;
+	border: 0;
+	padding:rem-calc(13) rem-calc(45);
+	margin-left: rem-calc(20);
+	
+	background: #ED1F34;
 	font-family: AzoSans-Bold;
+	color: #FFFFFF;
 	font-size: rem-calc(20);
 	text-align: center;
 	line-height: rem-calc(24);
-	color: #FFFFFF;
-	background: #ED1F34;
-	padding:rem-calc(13) rem-calc(45);
-	border-radius: 5px;
-	border: 0;
-	margin-left: rem-calc(20);
 
 	@include sm{
 		width: 100%;
 		margin-top: rem-calc(13);
+		margin-left: 0;
+		font-size: rem-calc(16);
+		line-height: rem-calc(20);
 	}
 }

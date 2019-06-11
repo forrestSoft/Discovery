@@ -2,6 +2,8 @@ import React from 'react'
 
 import Text from 'atoms/text'
 
+import './step3.scss'
+
 function Step3 (){
 	return(
 		<React.Fragment>

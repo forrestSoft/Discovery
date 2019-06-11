@@ -1,0 +1,14 @@
+@import 'remcalc.scss';
+@import 'styles/vars.scss';
+@import 'styles/breakpoints.scss';
+
+.step3{
+	padding-top: rem-calc(55);
+	padding-bottom: rem-calc(40);
+
+	
+	h2{
+		font-size: rem-calc(24);
+		line-height: rem-calc(30);
+	}
+}

@@ -16,32 +16,48 @@ code {
 
 $font-path: "components/styles/Fonts/Azo-Sans";
 @font-face {
-	font-family: "Azo-Sans";
-	src: url($font-path+"/Azo-Sans.woff")
+	font-family: "AzoSans-Regular";
+	font-style: normal;
+	src: url($font-path+"/Azo-Sans.eot"),
+			 url($font-path+"/Azo-Sans.woff"),
+			 url($font-path+"/Azo-Sans.svg"),
+			 url($font-path+"/Azo-Sans.ttf");
 }
 
 @font-face {
-	font-family: "Azo-Sans-Black";
-	src: url($font-path+"-Black/Azo-Sans-Black.woff")
+	font-family: "AzoSans-Black";
+	font-style: normal;
+	src: url($font-path+"-Black/Azo-Sans-Black.ttf"),
+			 url($font-path+"-Black/Azo-Sans-Black.woff");
 }
 
 @font-face {
-	font-family: "Azo-Sans-Bold";
-	src: url($font-path+"-Bold/Azo-Sans-Bold.woff")
+	font-family: "AzoSans-Bold";
+	font-style: normal;
+	src: url("components/styles/Fonts/Azo-Sans-Bold/Azo-Sans-Bold.eot?#iefix") ;
+	src:		 url("components/styles/Fonts/Azo-Sans-Bold/Azo-Sans-Bold.woff") format('woff');
+	src:		 url("components/styles/Fonts/Azo-Sans-Bold/Azo-Sans-Bold.ttf") format('truetype');
+			 // url("components/styles/Fonts/Azo-Sans-Bold/Azo-Sans-Bold.svg#svgFontName'") format('svg');
 }
 
 @font-face {
-	font-family: "Azo-Sans-Light";
-	src: url($font-path+"-Light/Azo-Sans-Light.woff")
+	font-family: "AzoSans-Light";
+	font-style: normal;
+	src: url($font-path+"-Light/Azo-Sans-Light.ttf");
+	src: url($font-path+"-Light/Azo-Sans-Light.woff");
 }
 
 @font-face {
-	font-family: "Azo-Sans-Medium";
-	src: url($font-path+"-Medium/Azo-Sans-Medium.woff")
+	font-family: "AzoSans-Medium";
+	font-style: normal;
+	src: url($font-path+"-Medium/Azo-Sans-Medium.woff");
+	src: url($font-path+"-Medium/Azo-Sans-Medium.ttf");
 }
 
 @font-face {
 	font-family: "ElaineD02-Regular";
-	src: url("components/styles/Fonts/Elaine_D02/Elaine_D02.woff")
+	font-style: normal;
+	src: url("components/styles/Fonts/Elaine_D02/Elaine_D02.woff");
+
 }
 

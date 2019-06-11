@@ -9,17 +9,19 @@ import './step2.scss'
 function Step2(props){
 	return(
 		<React.Fragment>
-			<Text 
-				type="h2" 
-				text="Almost Done! Please Enter Your First and Last Name."
-			/>
+			<Text type="h2">
+				<Text type="span">Almost Done! Please Enter</Text>
+				<Text type="span">Your First and Last Name.</Text>
+			</Text>
 			<div className="inputWrapper">
-				<TextInput 
-					placeholder="First Name" 
-					onChange={props.handleChange}
-					value={props.data.firstName}
-				/>
-				<TextInput placeholder="Last Name" />
+				<div>
+					<TextInput 
+						placeholder="First Name" 
+						onChange={props.handleChange}
+						value={props.data.firstName}
+					/>
+					<TextInput placeholder="Last Name" />
+				</div>
 				<Button 
 					handleClick={props.handleClick}
 					text="Sign up" 
