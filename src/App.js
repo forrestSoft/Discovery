@@ -9,11 +9,7 @@ import 'styles/text.scss';
 
 
 function App() {
-  return (
-    <div className="App">
-      <Signup />
-    </div>
-  )
+  return (<Signup />)
 }
 
 export default App;

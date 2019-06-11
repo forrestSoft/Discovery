@@ -30,29 +30,41 @@ export default function Signup(){
 
 	return(
 		<React.Fragment>
-			<Text Type='h1' text="join the list" />
-			<div>
 				{step === 1 &&
-					<Step1 
-						handleClick={nextStep(2)}
-						data={data}
-						handleChange={handleChange}
-					/>
+					<div className="App step1">
+						<Text Type='h1' text="join the list" />
+						<div>
+							<Step1 
+								handleClick={nextStep(2)}
+								data={data}
+								handleChange={handleChange}
+							/>
+						</div>
+					</div>
 				}
 
 				{step === 2 &&
-			    <Step2 
-			    	handleClick={nextStep(3)}
-			    	data={data}
-						handleChange={handleChange}
-		    	/>
+					<div className="App step2">
+						<Text Type='h1' text="join the list" />
+						<div>
+					    <Step2 
+					    	handleClick={nextStep(3)}
+					    	data={data}
+								handleChange={handleChange}
+				    	/>
+			    	</div>
+		    	</div>
 			  }
-			  
+
 			  {step === 3 &&
-			    <Step3 /> &&
-			    console.log(data)
+			  	<div className="App step3">
+				  	<Text Type='h1' text="congratulations!" />
+				  	<div>
+					    <Step3 /> 
+				    </div>
+			    </div>
 			  }
-		  </div>
+		  
 		</React.Fragment>
 	)
 }

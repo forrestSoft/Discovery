@@ -5,7 +5,10 @@ import Text from 'atoms/text'
 function Step3 (){
 	return(
 		<React.Fragment>
-			<Text text="Thank You For Signing Up!" />
+			<Text 
+				type="h2"
+				text="Thank You For Signing Up!" 
+			/>
 			<Text 
 				text="Look out for the latest news on your favorite shows." 
 				type="h3" 

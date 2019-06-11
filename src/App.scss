@@ -1,9 +1,13 @@
 @import './components/remcalc.scss';
+@import 'styles/vars.scss';
+@import 'styles/breakpoints.scss';
+
 
 html, body{
 	height:100%;
 	font-family: AzoSans-Bold, sans-serif;
 }
+
 body{
 	display: flex;
 	justify-content: center;
@@ -23,12 +27,30 @@ body{
   justify-content: center;
   flex-direction: row;
   align-items: center;
-	height: rem-calc(212);
+
+	@include md{
+		flex-direction: column;
+	}
+
+	& > div{
+		display: flex;
+		flex-direction: column;
+		align-items: left;
+
+		@include md{
+			align-items: center;
+		}
+	}
 }
 
 .helperTextWrapper{
 	margin-top: rem-calc(9);
 	font-family: AzoSans-Light, sans-serif;
+
+	@include md{
+		margin-bottom: rem-calc(28);
+		align-self: flex-start;
+	}
 
 	span, input, a{
 		display: inline-block;

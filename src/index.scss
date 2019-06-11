@@ -11,3 +11,37 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
     monospace;
 }
+
+
+
+$font-path: "components/styles/Fonts/Azo-Sans";
+@font-face {
+	font-family: "Azo-Sans";
+	src: url($font-path+"/Azo-Sans.woff")
+}
+
+@font-face {
+	font-family: "Azo-Sans-Black";
+	src: url($font-path+"-Black/Azo-Sans-Black.woff")
+}
+
+@font-face {
+	font-family: "Azo-Sans-Bold";
+	src: url($font-path+"-Bold/Azo-Sans-Bold.woff")
+}
+
+@font-face {
+	font-family: "Azo-Sans-Light";
+	src: url($font-path+"-Light/Azo-Sans-Light.woff")
+}
+
+@font-face {
+	font-family: "Azo-Sans-Medium";
+	src: url($font-path+"-Medium/Azo-Sans-Medium.woff")
+}
+
+@font-face {
+	font-family: "ElaineD02-Regular";
+	src: url("components/styles/Fonts/Elaine_D02/Elaine_D02.woff")
+}
+

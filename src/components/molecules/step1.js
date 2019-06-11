@@ -11,11 +11,15 @@ import './step1.scss'
 function Step1(props){
 	return(
 		<React.Fragment>
-			<Text 
-				type="h2"
-				text="Sign up for the TLC newsletter"
-			/>
-			<div class="inputWrapper">
+			<Text type="h2">
+				<Text type="span">
+					Sign up for 
+				</Text>
+				<Text type="span">
+					the TLC newsletter.
+				</Text>
+			</Text>
+			<div className="inputWrapper">
 				<TextInput placeholder="email address" 
 					onChange={props.handleChange('email')}
 					value={props.data.email}
@@ -29,7 +33,7 @@ function Step1(props){
 				<Checkbox />
 				<Text type="span" >
 					I agree to receive information from Discovery Communications in accordance with the following
-					<Link text="Privacy Policy" url="asdf" />
+					<Link text="Privacy Policy" url="https://google.com" />
 				</Text>
 			</div>
 		</React.Fragment>

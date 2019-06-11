@@ -1,5 +1,17 @@
 @import 'components/remcalc.scss';
+@import 'styles/vars.scss';
+@import 'styles/breakpoints.scss';
 
-input[type='text']{
-	width: rem-calc(480);
+.step1{
+	input[type='text']{
+		width: rem-calc(480);
+
+		@include lg{
+			width: rem-calc(374);
+		}
+
+		@include sm{
+			width:rem-calc(320);
+		}
+	}
 }
