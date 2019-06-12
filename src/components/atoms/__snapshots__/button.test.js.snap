@@ -1,0 +1,17 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`render disabled matches snapshot 1`] = `
+<button
+  disabled={true}
+>
+  I am a button
+</button>
+`;
+
+exports[`render matches snapshot 1`] = `
+<button
+  disabled={false}
+>
+  I am a button
+</button>
+`;

@@ -1,0 +1,38 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`render invalid matches snapshot 1`] = `
+<input
+  className="invalid"
+  onChange={null}
+  placeholder="I am the placeholder"
+  type="text"
+/>
+`;
+
+exports[`render matches snapshot 1`] = `
+<input
+  className="invalid"
+  onChange={null}
+  placeholder="I am the placeholder"
+  type="text"
+/>
+`;
+
+exports[`render valid matches snapshot 1`] = `
+<input
+  className="valid"
+  onChange={null}
+  placeholder="I am the placeholder"
+  type="text"
+/>
+`;
+
+exports[`render with value matches snapshot 1`] = `
+<input
+  className="invalid"
+  onChange={null}
+  placeholder="I am the placeholder"
+  type="text"
+  value="I am the value"
+/>
+`;

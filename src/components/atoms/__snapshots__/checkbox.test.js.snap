@@ -1,0 +1,17 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`render disabled matches snapshot 1`] = `
+<input
+  checked={false}
+  className="invalid"
+  type="checkbox"
+/>
+`;
+
+exports[`render matches snapshot 1`] = `
+<input
+  checked={true}
+  className="valid"
+  type="checkbox"
+/>
+`;
