@@ -5,7 +5,6 @@ export default function Text(props){
 	if(type && !Type){
 		Type = type
 	}
-	debugger
 
 	return(<Type>{text || props.children}</Type>)
 }
