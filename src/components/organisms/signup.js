@@ -1,6 +1,7 @@
 import React, {useState} from 'react'
 
 import Text from 'atoms/text'
+import Header from 'atoms/header'
 import Step1 from 'molecules/step1'
 import Step2 from 'molecules/step2'
 import Step3 from 'molecules/step3'
@@ -61,7 +62,7 @@ export default function Signup(){
 		<React.Fragment>
 				{step === 1 &&
 					(<div className="App step1">
-						<Text Type='h1' text="join the list" />
+						<Header text="join the list" />
 						<div>
 							<Step1 
 								handleClick={nextStep(2)}
@@ -74,7 +75,7 @@ export default function Signup(){
 
 				{step === 2 &&
 					(<div className="App step2">
-						<Text Type='h1' text="join the list" />
+						<Header text="join the list" />
 						<div>
 					    <Step2 
 					    	handleClick={nextStep(3)}
@@ -87,7 +88,7 @@ export default function Signup(){
 
 			  {step === 3 &&
 			  	(<div className="App step3">
-				  	<Text Type='h1' text="congratulations!" />
+				  	<Header text="congratulations!" />
 				  	<div>
 					    <Step3 /> 
 				    </div>

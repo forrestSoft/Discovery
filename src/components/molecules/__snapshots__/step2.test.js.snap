@@ -1,0 +1,89 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`render matches snapshot 1`] = `
+<Fragment>
+  <Text
+    Type="h1"
+    type="h2"
+  >
+    <Text
+      Type="h1"
+      type="span"
+    >
+      Almost Done! Please Enter
+    </Text>
+    <Text
+      Type="h1"
+      type="span"
+    >
+      Your First and Last Name.
+    </Text>
+  </Text>
+  <div
+    className="inputWrapper"
+  >
+    <div>
+      <TextInput
+        onChange="onClick"
+        placeholder="First Name"
+        valid={false}
+        value=""
+      />
+      <TextInput
+        onChange="onClick"
+        placeholder="Last Name"
+        valid={false}
+        value=""
+      />
+    </div>
+    <Button
+      disabled={true}
+      text="Sign up"
+    />
+  </div>
+</Fragment>
+`;
+
+exports[`render with data matches snapshot 1`] = `
+<Fragment>
+  <Text
+    Type="h1"
+    type="h2"
+  >
+    <Text
+      Type="h1"
+      type="span"
+    >
+      Almost Done! Please Enter
+    </Text>
+    <Text
+      Type="h1"
+      type="span"
+    >
+      Your First and Last Name.
+    </Text>
+  </Text>
+  <div
+    className="inputWrapper"
+  >
+    <div>
+      <TextInput
+        onChange="onClick"
+        placeholder="First Name"
+        valid={false}
+        value="john"
+      />
+      <TextInput
+        onChange="onClick"
+        placeholder="Last Name"
+        valid={false}
+        value="smith"
+      />
+    </div>
+    <Button
+      disabled={true}
+      text="Sign up"
+    />
+  </div>
+</Fragment>
+`;

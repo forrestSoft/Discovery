@@ -7,7 +7,6 @@ import Button from 'atoms/button'
 import './step2.scss'
 
 function Step2(props){
-	console.log(props.data.firstNameValid , props.data.lastNameValid)
 	return(
 		<React.Fragment>
 			<Text type="h2">
