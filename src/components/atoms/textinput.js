@@ -2,7 +2,7 @@
 import React from 'react';
 
 export default function TextInput(props){
-	let { value, placeholder} = props
+	let { value, placeholder, valid} = props
 
 	return(
 		<input 
@@ -10,6 +10,7 @@ export default function TextInput(props){
 			placeholder={placeholder}
 			value={value}
 			onChange={props.onChange || null}
+			className={valid ? 'valid' : 'invalid'}
 		/>
 	)
 }

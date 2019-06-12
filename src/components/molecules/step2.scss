@@ -3,9 +3,19 @@
 @import 'styles/breakpoints.scss';
 
 .step2{
-	padding-bottom: rem-calc(80);
+	padding-bottom: rem-calc(0);
+
+	@include md{
+		padding-bottom: rem-calc(20);
+	}
+
+	@include sm{
+		padding-bottom: rem-calc(80);
+	}
+
 	@include xl{
 		margin-left: rem-calc(80);
+		margin: 0;
 	}
 
 	input[type='text']{

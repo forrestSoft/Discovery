@@ -9,6 +9,7 @@ import Link from 'atoms/link'
 import './step1.scss'
 
 function Step1(props){
+	let { data, handleClick,handleChange } = props
 	return(
 		<React.Fragment>
 			<Text type="h2">
@@ -21,16 +22,22 @@ function Step1(props){
 			</Text>
 			<div className="inputWrapper">
 				<TextInput placeholder="email address" 
-					onChange={props.handleChange('email')}
-					value={props.data.email}
+					onChange={handleChange('email')}
+					value={data.email}
+					valid={data.emailValid}
 				/>
 				<Button text="Next" 
-					handleClick = {props.handleClick}
+					handleClick={handleClick}
+					disabled = {!(data.emailValid && data.checkboxChecked)}
 				/>
 			</div>
 
 			<div className="helperTextWrapper">
-				<Checkbox />
+				<Checkbox 
+					checked={data.checkboxChecked}
+					onChange={handleChange('checkboxChecked')}
+					valid={data.checkboxChecked}
+				/>
 				<Text type="span" >
 					I agree to receive information from Discovery Communications in accordance with the following
 					<Link text="Privacy Policy" url="https://google.com" />

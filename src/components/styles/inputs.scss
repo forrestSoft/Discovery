@@ -15,6 +15,11 @@
 	}
 }
 
+//TODO: I have brought shame to my family
+input.invalid{
+		outline: 1px solid red !important;
+	}
+
 input[type="text"]{
 	box-sizing: border-box;
 
@@ -22,6 +27,7 @@ input[type="text"]{
 	border: 0;
 	border-radius: 5px;
 	margin: 0;
+	outline: 0;
 
 	background: rgba(255, 255, 255, .2);
 	font-family: AzoSans-Regular;
@@ -46,6 +52,11 @@ input[type="checkbox"]{
 	margin-right: rem-calc(9);
 	
 	vertical-align: top;
+
+	&.invalid{
+		height: rem-calc(17);
+		width: rem-calc(15);
+	}
 }
 
 button{
@@ -61,6 +72,12 @@ button{
 	font-size: rem-calc(20);
 	text-align: center;
 	line-height: rem-calc(24);
+
+	&:disabled{
+		color: #333;
+		background: #67373c;
+		border: 1px solid #ED1F34;
+	}
 
 	@include sm{
 		width: 100%;

@@ -7,6 +7,7 @@ import Button from 'atoms/button'
 import './step2.scss'
 
 function Step2(props){
+	console.log(props.data.firstNameValid , props.data.lastNameValid)
 	return(
 		<React.Fragment>
 			<Text type="h2">
@@ -17,15 +18,22 @@ function Step2(props){
 				<div>
 					<TextInput 
 						placeholder="First Name" 
-						onChange={props.handleChange}
+						onChange={props.handleChange('firstName')}
 						value={props.data.firstName}
+						valid={props.data.firstNameValid}
 					/>
-					<TextInput placeholder="Last Name" />
+					<TextInput
+						placeholder="Last Name" 
+						onChange={props.handleChange('lastName')}
+						value={props.data.lastName}
+						valid={props.data.lastNameValid}
+					/>
 				</div>
 				<Button 
 					handleClick={props.handleClick}
 					text="Sign up" 
-					value={props.data.lastName}
+					disabled={!(props.data.firstNameValid && props.data.lastNameValid)}
+
 				/>
 			</div>
 		</React.Fragment>
