@@ -6,5 +6,6 @@
 
 ## You can also
 - `npm test`
+- `npm run storybook`
 
 

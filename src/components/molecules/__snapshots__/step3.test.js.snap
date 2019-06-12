@@ -2,15 +2,22 @@
 
 exports[`render matches snapshot 1`] = `
 <Fragment>
-  <Text
-    Type="h1"
-    text="Thank You For Signing Up!"
-    type="h2"
-  />
-  <Text
-    Type="h1"
-    text="Look out for the latest news on your favorite shows."
-    type="h3"
-  />
+  <div
+    className="App step3"
+  >
+    <Header
+      text="congratulations"
+    />
+    <div>
+      <Text
+        text="Thank You For Signing Up!"
+        type="h2"
+      />
+      <Text
+        text="Look out for the latest news on your favorite shows."
+        type="h3"
+      />
+    </div>
+  </div>
 </Fragment>
 `;

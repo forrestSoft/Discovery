@@ -61,16 +61,13 @@ export default function Signup(){
 	return(
 		<React.Fragment>
 				{step === 1 &&
-					(<div className="App step1">
-						<Header text="join the list" />
-						<div>
-							<Step1 
-								handleClick={nextStep(2)}
-								data={data}
-								handleChange={handleChange}
-							/>
-						</div>
-					</div>)
+					(
+						<Step1 
+							handleClick={nextStep(2)}
+							data={data}
+							handleChange={handleChange}
+						/>
+					)
 				}
 
 				{step === 2 &&

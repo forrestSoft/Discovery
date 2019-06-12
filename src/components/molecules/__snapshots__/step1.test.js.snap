@@ -2,108 +2,120 @@
 
 exports[`render matches snapshot 1`] = `
 <Fragment>
-  <SubText
-    text="i am subText"
-  >
-    <Text
-      Type="h1"
-      type="span"
-    >
-      Sign up for
-    </Text>
-    <Text
-      Type="h1"
-      type="span"
-    >
-      the TLC newsletter.
-    </Text>
-  </SubText>
   <div
-    className="inputWrapper"
+    className="App step1"
   >
-    <TextInput
-      onChange="onClick"
-      placeholder="email address"
-      valid={false}
-      value=""
+    <Header
+      text="join the list"
     />
-    <Button
-      disabled={true}
-      text="Next"
-    />
-  </div>
-  <div
-    className="helperTextWrapper"
-  >
-    <CheckBox
-      checked={false}
-      onChange="onClick"
-      valid={false}
-    />
-    <Text
-      Type="h1"
-      type="span"
-    >
-      I agree to receive information from Discovery Communications in accordance with the following
-      <Link
-        text="Privacy Policy"
-        url="https://google.com"
-      />
-    </Text>
+    <div>
+      <SubText
+        text="i am subText"
+      >
+        <Text
+          type="span"
+        >
+          Sign up for
+        </Text>
+        <Text
+          type="span"
+        >
+          the TLC newsletter.
+        </Text>
+      </SubText>
+      <div
+        className="inputWrapper"
+      >
+        <TextInput
+          onChange="onClick"
+          placeholder="email address"
+          valid={false}
+          value=""
+        />
+        <Button
+          disabled={true}
+          text="Next"
+        />
+      </div>
+      <div
+        className="helperTextWrapper"
+      >
+        <CheckBox
+          checked={false}
+          onChange="onClick"
+          valid={false}
+        />
+        <Text
+          type="span"
+        >
+          I agree to receive information from Discovery Communications in accordance with the following
+          <Link
+            text="Privacy Policy"
+            url="https://google.com"
+          />
+        </Text>
+      </div>
+    </div>
   </div>
 </Fragment>
 `;
 
 exports[`render with data matches snapshot 1`] = `
 <Fragment>
-  <SubText
-    text="i am subText"
-  >
-    <Text
-      Type="h1"
-      type="span"
-    >
-      Sign up for
-    </Text>
-    <Text
-      Type="h1"
-      type="span"
-    >
-      the TLC newsletter.
-    </Text>
-  </SubText>
   <div
-    className="inputWrapper"
+    className="App step1"
   >
-    <TextInput
-      onChange="onClick"
-      placeholder="email address"
-      valid={false}
-      value="bob"
+    <Header
+      text="join the list"
     />
-    <Button
-      disabled={true}
-      text="Next"
-    />
-  </div>
-  <div
-    className="helperTextWrapper"
-  >
-    <CheckBox
-      checked={true}
-      onChange="onClick"
-      valid={true}
-    />
-    <Text
-      Type="h1"
-      type="span"
-    >
-      I agree to receive information from Discovery Communications in accordance with the following
-      <Link
-        text="Privacy Policy"
-        url="https://google.com"
-      />
-    </Text>
+    <div>
+      <SubText
+        text="i am subText"
+      >
+        <Text
+          type="span"
+        >
+          Sign up for
+        </Text>
+        <Text
+          type="span"
+        >
+          the TLC newsletter.
+        </Text>
+      </SubText>
+      <div
+        className="inputWrapper"
+      >
+        <TextInput
+          onChange="onClick"
+          placeholder="email address"
+          valid={false}
+          value="bob"
+        />
+        <Button
+          disabled={true}
+          text="Next"
+        />
+      </div>
+      <div
+        className="helperTextWrapper"
+      >
+        <CheckBox
+          checked={true}
+          onChange="onClick"
+          valid={true}
+        />
+        <Text
+          type="span"
+        >
+          I agree to receive information from Discovery Communications in accordance with the following
+          <Link
+            text="Privacy Policy"
+            url="https://google.com"
+          />
+        </Text>
+      </div>
+    </div>
   </div>
 </Fragment>
 `;
