@@ -75,7 +75,7 @@ export default function Signup(){
 			  }
 
 			  {step === 3 &&
-			  	(<Step3 />)
+			  	(<Step3 data={data} />) 
 			  }
 		</React.Fragment>
 	)

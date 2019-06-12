@@ -5,7 +5,8 @@ import Header from 'atoms/header'
 
 import './step3.scss'
 
-function Step3 (){
+function Step3 (props){
+	console.log(props.data)
 	return(
 		<React.Fragment>
 			<div className="App step3">
